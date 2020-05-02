@@ -1,43 +1,39 @@
 import React, { useState, useCallback } from 'react';
-import './Debouncing.css';
+import './Throttling.css'
 
 import Card from '../ui/card/Card';
-import { debounce } from '../../utils/Utils';
+import Button from '../ui/button/Button';
+import { throttle } from '../../utils/Utils';
 
-const Debouncing = (props) => {
+const Throttling = (props) => {
 
-    const [value1, setValue1] = useState('');
     const [eventCount1, setEventCount1] = useState(0);
     const [networkCount1, setNetworkCount1] = useState(0);
     const [delay, setDelay] = useState('300');
 
-    const [value2, setValue2] = useState('');
     const [eventCount2, setEventCount2] = useState(0);
     const [networkCount2, setNetworkCount2] = useState(0);
 
-    const debounceNetworkChange = useCallback(debounce((value)=> {
+    const throttleNetworkChange = useCallback(throttle((value) => {
         setNetworkCount1(value)
-     }, Number(delay)), [delay]);
- 
+    }, Number(delay)), [delay]);
 
-    const input1ChangeHandler = (event) => {
-        setValue1(event.target.value);
+    const button1Pressed = () => {
         setEventCount1(eventCount1 + 1);
-        debounceNetworkChange(networkCount1 + 1);
+        throttleNetworkChange(networkCount1 + 1);
     }
 
-    const input2ChangeHandler = (event) => {
-        setValue2(event.target.value);
+    const button2Pressed = () => {
         setEventCount2(eventCount2 + 1);
         setNetworkCount2(networkCount2 + 1);
     }
 
     return (
         <Card>
-            <h2>Debouncing</h2>
+            <h2>Throttling</h2>
             <div className='simple-container'>
                 <div className="simple-box">
-                    <h4><u>Input with debouncing</u></h4>
+                    <h4><u>Button with throttling</u></h4>
                     <div className='list-container'>
                         <ul>
                             <li>Event count: <span className='event-class'>{eventCount1}</span></li>
@@ -45,12 +41,9 @@ const Debouncing = (props) => {
                         </ul>
                     </div>
                     <div className="search-input">
-                        <label>Type Something</label>
-                        <input
-                            type='text'
-                            value={value1}
-                            onChange={input1ChangeHandler}
-                        />
+                        <Button
+                            clicked={button1Pressed}
+                        >Click</Button>
                     </div>
                     <div className="search-input">
                         <label>Set Delay (millisecond)</label>
@@ -62,7 +55,7 @@ const Debouncing = (props) => {
                     </div>
                 </div>
                 <div className="simple-box">
-                    <h4><u>Input without debouncing</u></h4>
+                    <h4><u>Button without throttling</u></h4>
                     <div className='list-container'>
                         <ul>
                             <li>Event count: <span className='event-class'>{eventCount2}</span></li>
@@ -70,22 +63,19 @@ const Debouncing = (props) => {
                         </ul>
                     </div>
                     <div className="search-input">
-                        <label>Type Something</label>
-                        <input
-                            type='text'
-                            value={value2}
-                            onChange={input2ChangeHandler}
-                        />
+                        <Button
+                            clicked={button2Pressed}
+                        >Click</Button>
                     </div>
                 </div>
             </div>
             <div>
                <p className='info'>
-               In the <strong>debouncing</strong> technique, no matter how many times the user fires the event, the attached function will be executed only after the specified time once the user stops firing the event. Here once the user had stopped typing for <em><b>{delay}ms</b></em> ,then only we increase networkCallCounter.
+               <strong>Throttling</strong> is a technique in which, no matter how many times the user fires the event, the attached function will be executed only once in a given time interval. Here we make sure that no matter how many times user had clicked the button, we increase networkCallCounter only once in every <em><b>{delay}ms</b></em>
                </p>
             </div>
         </Card>
     )
 }
 
-export default Debouncing;
+export default Throttling;
