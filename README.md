@@ -1,11 +1,11 @@
 **Throttling v/s Debouncing**
 
-Simple react project that shows the working of throttling and debouncing.
+Simple react project that shows the working of throttling and debouncing.<br />
 Few important things that covered in the project: (No actual network call were made , just used a simple counter to <br />
     to represent the number of network call ).
   1. Basic difference between throttling and debouncing.
   2. How simply implementing throttling/debouncing can significatnly lower the number of <br />
-     network call, with comprimising the user experience.
+     network call and segnificatenly enhance the performanace, without comprimising the user experience.
   3. You can change the delay value and see it's impact on number of network call.
   4. Basic react hooks concept.
 
