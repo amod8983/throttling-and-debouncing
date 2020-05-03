@@ -1,4 +1,4 @@
-### `:fire: Throttling v/s Debouncing :fire:`
+### :fire:`Throttling v/s Debouncing`:fire:
 
 Simple react project that shows the working of throttling and debouncing.<br />
 Few important things that are covered in the project:<br />
