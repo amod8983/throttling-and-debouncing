@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/throttling-and-debouncing/static/css/main.2d35ecf2.chunk.css",
+    "main.js": "/throttling-and-debouncing/static/js/main.cfec5fc0.chunk.js",
+    "main.js.map": "/throttling-and-debouncing/static/js/main.cfec5fc0.chunk.js.map",
+    "runtime-main.js": "/throttling-and-debouncing/static/js/runtime-main.ee626c7a.js",
+    "runtime-main.js.map": "/throttling-and-debouncing/static/js/runtime-main.ee626c7a.js.map",
+    "static/js/2.a7c5a2ee.chunk.js": "/throttling-and-debouncing/static/js/2.a7c5a2ee.chunk.js",
+    "static/js/2.a7c5a2ee.chunk.js.map": "/throttling-and-debouncing/static/js/2.a7c5a2ee.chunk.js.map",
+    "index.html": "/throttling-and-debouncing/index.html",
+    "precache-manifest.10713534f19c666cfa9538d97b3abe4e.js": "/throttling-and-debouncing/precache-manifest.10713534f19c666cfa9538d97b3abe4e.js",
+    "service-worker.js": "/throttling-and-debouncing/service-worker.js",
+    "static/css/main.2d35ecf2.chunk.css.map": "/throttling-and-debouncing/static/css/main.2d35ecf2.chunk.css.map",
+    "static/js/2.a7c5a2ee.chunk.js.LICENSE.txt": "/throttling-and-debouncing/static/js/2.a7c5a2ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee626c7a.js",
+    "static/js/2.a7c5a2ee.chunk.js",
+    "static/css/main.2d35ecf2.chunk.css",
+    "static/js/main.cfec5fc0.chunk.js"
+  ]
+}
