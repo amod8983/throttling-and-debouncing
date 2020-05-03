@@ -8,13 +8,11 @@ Few important things that are covered in the project:<br />
   3. You can change the delay value and see it's impact on the number of network call.
   4. Basic react hooks concept.
 
-Note:
-  1. No actual network call were made , just used a simple counter to <br />
+Note: No actual network call were made , just used a simple counter to <br />
      to represent the number of network call.<br />
-  2. 
 In the project directory, you can run:
--> npm i
--> npm start
+-> npm i <br />
+-> npm start <br />
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
