@@ -10,7 +10,7 @@ Few important things that are covered in the project:<br />
 
 Note: No actual network call were made , just used a simple counter to <br />
      to represent the number of network call.<br />
-In the project directory, you can run:
+In the project directory, you can run: <br />
 -> npm i <br />
 -> npm start <br />
 
