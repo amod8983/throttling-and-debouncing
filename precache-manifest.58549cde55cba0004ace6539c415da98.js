@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47c991053f6075dd8a59ad9d31dd2bde",
+    "revision": "2a4f8cba766dd6e0828f9b8cc0c67142",
     "url": "/throttling-and-debouncing/index.html"
   },
   {

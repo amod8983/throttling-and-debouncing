@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/throttling-and-debouncing/precache-manifest.10713534f19c666cfa9538d97b3abe4e.js"
+  "/throttling-and-debouncing/precache-manifest.58549cde55cba0004ace6539c415da98.js"
 );
 
 self.addEventListener('message', (event) => {
